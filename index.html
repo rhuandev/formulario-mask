@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Rhuan Carlos">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <form class="form-flex" name="form-flex"> 
+       <input type="text" name="field-name" class="input-form-flex" placeholder="NOME"
+              id="input-name" required/>
+       <input type="text" name="field-phone" class="input-form-flex" data-mask="(00) 00000-0000" 
+              placeholder="(XX) XXXXX-XXXX" id="input-tel" pattern=".{15,}" required/>
+       <input type="text" name="field-cep" class="input-form-flex" data-mask="00000-000" 
+              placeholder="XXXXX-XXX" id="input-cep" pattern=".{9,}" required/>
+       <input type="text" name="field-cpfcnpj" class="input-form-flex" 
+              placeholder="CPF/CNPJ" id="input-cpfcnpj" required/>
+       <input type="email" name="field-email" class="input-form-flex" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              placeholder="E-MAIL" " id="input-email" required>
+       <input type="submit" class="input-submit-form-flex">
+    </form>    
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script language="javascript" src="js/jquery.mask.js"></script>
+    <script language="javascript" src="js/script.js"></script>
+</body>
+</html>
